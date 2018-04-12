@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+table, td, th {
+    border: 1px solid black;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th {
+    height: 50px;
+}
+</style>
+<style>
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    width:40%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+th {
+    text-align:center; 
+    vertical-align:middle;
+    background-color: #A9DFBF;
+    font-size: 40px;
+}
+
+tr:nth-child(odd) {
+    background-color: #dddddd;
+}
+
+body {
+    background-color: lightblue;
+    padding-top: 100px;
+}
+</style>
+
+
+</head>
+<body>
+  
+<table bgcolor="#A9DFBF" align="center">
+  <tr>
+
+     <thead>
+     <th colspan="3" > Sign up </th> 
+     </thead>
+  </tr>
+
+  <tr>
+    <td>First Name: </td>
+    <td>
+    <input id = "1" type="text" name="value1"> </td>
+    <td>Required!</td>
+  </tr>
+    
+   <tr>
+    <td>Last Name: </td>
+    <td>
+    <input id = "12" type="text" name="value12"> </td>
+    <td>Required!</td>
+  </tr>
+ 
+  <tr>
+    <td>E-mail Address:</td>
+    <td>
+	<input id = "3" type="text" name="value3" ></td>
+    <td>Required!</td>
+  </tr>
+  
+<tr>
+    <td>Phone Number: </td>
+    <td>
+	<input id = "3" type="text" name="value3" ></td>
+    <td>Required!</td>
+  </tr>
+
+<tr>
+    <td>Birthday:</td>
+    <td>
+	<input id = "3" type="text" name="value3" ></td>
+    <td>Required!</td>
+  </tr>
+
+  <tr>
+    <td>Gender :</td>
+    <td>
+	<input id = "3" type="text" name="value3" ></td>
+    <td>Required!</td>
+  </tr>
+  
+  <tr>
+    <td colspan="2" align="left"> Continue when finished (>^-^)> </td>
+    <td> <input type="button" value="Continue>>" onclick="Validate();"> </td>
+  </tr>
+
+  </table>
+
+
+  
+ <script language="javascript" type= "text/javascript">
+		<!--
+		function Validate() {
+			var value1 =  document.getElementById("1");
+ 			var value2 =  document.getElementById("2");
+			var value3 =  document.getElementById("3");
+		if  (value1.value.length>=2 && value2.value.length==8 && value3.value.includes("@"))
+			{
+           		Verify();
+          	}
+		else{	
+			alert("Please Input Valid Information");
+		    }
+			//document.write(value1.value)
+			//document.write("im here");
+			//Verify();
+			}
+		function Verify(){
+			var value1 =  document.getElementById("1");
+ 			var value2 =  document.getElementById("2");
+			var value3 =  document.getElementById("3");
+
+			var user1="Riviere Seguie";
+			var user12=31396377;
+			var user13="rjs76@njit.edu";
+
+			var user2="Bobby William";
+			var user22=44676377;
+			var user23="bw46@njit.edu";
+	
+			var user3="Xao Cheng";
+			var user32=33785677;
+			var user33="xc85@njit.edu";
+
+			var user4="John Steel";
+			var user42=67481977;
+			var user43="js34@njit.edu";
+	
+			var user5="Adam Scanchez";
+			var user52=52389377;
+			var user53="as95@njit.edu";
+			
+			if (value1.value== user1 || value1.value==user2 || value1.value==user3 || value1.value==user4 || value1.value==user5)
+				{
+	 	 		if (value2.value== user12 || value2.value==user22 || value2.value==user32 || value2.value==user42 || value2.value==user52)
+					{
+		       			 if (value3.value== user13 || value3.value==user23 || value3.value==user33 || value3.value==user43 || value3.value==user53)
+							{
+							alert("Welcome Back Valued Customer");
+							}	
+						else
+							{
+                            alert("Your Email doesn't match our previous records please try again");
+			
+							}	
+	
+				    }
+		 		else 
+					{
+			 			alert("Your ID doesn't match our previous records please try again");
+					}
+
+				}
+			else
+				{
+	 				alert("Your name doesn't match our previous records please try again");
+				}
+
+			
+		}
+		-->
+</script>
+
+</body>
+</html>
