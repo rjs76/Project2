@@ -1,0 +1,97 @@
+<html>
+<head>
+<style>
+
+table, td, th {
+    border: 1px solid black;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th {
+    height: 50px;
+}
+</style>
+<style>
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    width:40%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+th {
+    text-align:center; 
+    vertical-align:middle;
+    background-color: #A9DFBF;
+    font-size: 40px;
+}
+
+tr:nth-child(odd) {
+    background-color: #dddddd;
+}
+
+body {
+    background-color: lightblue;
+    padding-top: 100px;
+}
+</style>
+
+</head>
+
+<body>
+  <form id="myform" method="post" action="Signup.php">
+  <table bgcolor="#A9DFBF" align="center">
+    <tr>
+
+     <thead>
+     <th colspan="3" > Sign up </th> 
+     </thead>
+     </tr>
+     <tr>
+         <td><label for="Fname"> First name :</label> </td>
+           <td><input type="text" id="Fname" name="Fname" required></td>
+     </tr>
+      <tr>
+          <td><label for="Lname"> Last name : </label> </td>
+           <td><input type="text" id="Lname" name="Lname" required></td>
+     </tr>
+      <tr>
+          <td><label for="Email"> Email : </label></td>
+            <td><input type="Email" id="Email" name="Email" required></td>
+      </tr>
+      <tr>
+          <td><label for="Phone"> Phone Number : </label></td>
+            <td><input type="text" id="Phone" name="Phone" required></td>
+      </tr>
+        <tr>
+          <td><label for="Birthday"> Birthday : </label></td>
+            <td><input type="date" id="Birthday" name="Birthday" required></td>
+      </tr>
+        <tr>
+          <td><label for="Email"> Gender : </label></td>
+            <td><input type="text" id="Gender" name="Gender" required></td>
+      </tr>
+        <tr>
+          <td><label for="Password"> Password : </label></td>
+            <td><input type="text" id="Password" name="Password" required></td>
+      </tr>
+      <tr>
+           <td></td>
+           <td><input type="submit" name="login_btn"></td>
+     </tr>
+     
+ 
+</table>
+</form>    
+</body>
+
+</html>
