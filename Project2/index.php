@@ -1,8 +1,8 @@
 <?php
-require('../model/toDosDatabase.php');
-require('../model/Account.php');
-require('../model/ToDo.php');
-require('../model/Database1.php');
+require('toDosDatabase.php');
+require('Account.php');
+require('ToDo.php');
+require('Database1.php');
 //$cookieName = 'cookieid';
 //setcookie($cookieName, $id, time() + (86400 * 30), "/"); // 86400 = 1 day
 session_start();
